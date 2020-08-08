@@ -59,11 +59,26 @@ navLinks[3].textContent = siteContent.nav["nav-item-4"];
 navLinks[4].textContent = siteContent.nav["nav-item-5"];
 navLinks[5].textContent = siteContent.nav["nav-item-6"];
 
+//Change nav color to green
+
 navArray = Array.from(navLinks);
 
 for (i = 0; i < navArray.length; i++) {
   navArray[i].style.color = "green";
 }
+
+//append and prepend to nav
+
+const nav = document.querySelector("nav");
+const node1 = document.createElement("a");
+const node2 = document.createElement("a");
+node1.textContent = "Start Here";
+node2.textContent = "Affiliates";
+node1.style.color = "red";
+node2.style.color = "red";
+
+nav.appendChild(node1);
+nav.prepend(node2);
 
 //CTA
 
