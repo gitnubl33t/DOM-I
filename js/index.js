@@ -98,10 +98,14 @@ pContent[2].textContent = siteContent["main-content"]["services-content"];
 pContent[3].textContent = siteContent["main-content"]["product-content"];
 pContent[4].textContent = siteContent["main-content"]["vision-content"];
 
-// Footer h4 & p tags
+// Contact h4 & p tags
 
 heading4[5].textContent = siteContent["contact"]["contact-h4"];
 
 pContent[5].textContent = siteContent["contact"]["address"];
 pContent[6].textContent = siteContent["contact"]["phone"];
 pContent[7].textContent = siteContent["contact"]["email"];
+
+//Footer
+
+pContent[8].textContent = siteContent["footer"]["copyright"];
