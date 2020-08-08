@@ -45,6 +45,7 @@ const siteContent = {
 //Logo Image
 
 let logo = document.getElementById("logo-img");
+
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 //Nav Links
@@ -60,36 +61,47 @@ navLinks[5].textContent = siteContent.nav["nav-item-6"];
 
 //CTA
 
-let ctah1 = document.querySelector("h1");
+const ctah1 = document.querySelector("h1");
 ctah1.textContent = siteContent.cta["h1"];
 
-let ctaButton = document.querySelector("button");
+const ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent.cta["button"];
 
-let ctaImg = document.getElementById("cta-img");
+const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
-//Main Content h4 tags
+//Main Content h4 and p tags (variaables declared)
 
 const heading4 = document.querySelectorAll("h4");
 
 heading4[0].textContent = siteContent["main-content"]["features-h4"];
 heading4[1].textContent = siteContent["main-content"]["about-h4"];
-heading4[2].textContent = siteContent["main-content"]["services-h4"];
-heading4[3].textContent = siteContent["main-content"]["product-h4"];
-heading4[4].textContent = siteContent["main-content"]["vision-h4"];
-
-//Main Content p tags
 
 const pContent = document.querySelectorAll("p");
 
 pContent[0].textContent = siteContent["main-content"]["features-content"];
 pContent[1].textContent = siteContent["main-content"]["about-content"];
+
+//Main Content Middle image
+
+const middleImg = document.getElementById("middle-img");
+
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+//Bottom Content h4 & p tags
+
+heading4[2].textContent = siteContent["main-content"]["services-h4"];
+heading4[3].textContent = siteContent["main-content"]["product-h4"];
+heading4[4].textContent = siteContent["main-content"]["vision-h4"];
+
 pContent[2].textContent = siteContent["main-content"]["services-content"];
 pContent[3].textContent = siteContent["main-content"]["product-content"];
 pContent[4].textContent = siteContent["main-content"]["vision-content"];
 
-//Main Content Middle image
+// Footer h4 & p tags
 
-let middleImg = document.getElementById("middle-img");
-logo.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+heading4[5].textContent = siteContent["contact"]["contact-h4"];
+
+pContent[5].textContent = siteContent["contact"]["address"];
+pContent[6].textContent = siteContent["contact"]["phone"];
+pContent[7].textContent = siteContent["contact"]["email"];
