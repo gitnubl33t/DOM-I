@@ -78,3 +78,18 @@ heading4[1].textContent = siteContent["main-content"]["about-h4"];
 heading4[2].textContent = siteContent["main-content"]["services-h4"];
 heading4[3].textContent = siteContent["main-content"]["product-h4"];
 heading4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+//Main Content p tags
+
+const pContent = document.querySelectorAll("p");
+
+pContent[0].textContent = siteContent["main-content"]["features-content"];
+pContent[1].textContent = siteContent["main-content"]["about-content"];
+pContent[2].textContent = siteContent["main-content"]["services-content"];
+pContent[3].textContent = siteContent["main-content"]["product-content"];
+pContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+//Main Content Middle image
+
+let middleImg = document.getElementById("middle-img");
+logo.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
